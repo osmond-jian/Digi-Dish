@@ -1,28 +1,16 @@
 # Digi-Dish
 A web app to help people get easy access to relevant recipes!
 
-# Project stuff (will be removed later)
-
-## Course Information
-
-**Course:** DIGT 3102 - Web Development Basics  
-**Project Phase:** Phase 1 - Content Development  
-**Due Date:** June 8, 2026  
+## Project Description
+This is an app using HTML, CSS, and JS that will use a recipe API and help users find the right recipe for their situation
 
 ## Team Members
+Osmond Jian
+Denise Shi
+Betty Luo
+Mordecai Dada
 
-| Name | Student ID | YorkU Email | Main Responsibility |
-|---|---|---|---|
-| [Name 1] | [Student ID] | [email@yorku.ca] | [Example: Home/About pages] |
-| [Name 2] | [Student ID] | [email@yorku.ca] | [Example: Contact/Form page] |
-| [Name 3] | [Student ID] | [email@yorku.ca] | [Example: Resources/Gallery pages] |
-| [Name 4] | [Student ID] | [email@yorku.ca] | [Example: README/validation/deployment] |
-
-## Project Description
-
-[Write 2-4 sentences explaining what the website/app is about.]
-
-This project is the Phase 1 HTML structure for our web application. The focus of this phase is content, page organization, semantic HTML, navigation, accessibility, and deployment. Styling and JavaScript functionality will be added in later phases.
+# Project stuff (will be removed later)
 
 ## Target Users
 
@@ -40,10 +28,10 @@ The project must include 7-10 HTML pages. The following pages are planned:
 | Home | `index.html` | Introduces the project and links to main sections. | [Name] |
 | About | `about.html` | Explains the purpose, audience, and background of the project. | [Name] |
 | Contact | `contact.html` | Provides contact information and includes an HTML form. | [Name] |
-| [Page 4] | `[page-name].html` | [Brief purpose.] | [Name] |
-| [Page 5] | `[page-name].html` | [Brief purpose.] | [Name] |
-| [Page 6] | `[page-name].html` | [Brief purpose.] | [Name] |
-| [Page 7] | `[page-name].html` | [Brief purpose.] | [Name] |
+| resources | `resources.html` | Provides some helpful links for recipes or fun sites for cooking-related research | [Name] |
+| recipeSearch | `recipeSearch.html` | A page to let users search for recipes based on ingredients, price, etc. | [Name] |
+| seaerchResults | `searchResults.html` | A page to show users the search results of all the different recipes | [Name] |
+| recipe| `recipe.html` | A page that takes data from the API and renders it in a nice, easy format| [Name] |
 | [Optional Page 8] | `[page-name].html` | [Brief purpose.] | [Name] |
 | [Optional Page 9] | `[page-name].html` | [Brief purpose.] | [Name] |
 | [Optional Page 10] | `[page-name].html` | [Brief purpose.] | [Name] |
@@ -52,17 +40,17 @@ The project must include 7-10 HTML pages. The following pages are planned:
 
 ### 1. Initialize the Project
 
-- [ ] Create the project folder.
-- [ ] Create `index.html`, `about.html`, and `contact.html`.
-- [ ] Create enough additional pages to reach 7-10 total HTML pages.
-- [ ] Create the following folders:
-  - [ ] `images/`
-  - [ ] `css/`
-  - [ ] `js/`
-- [ ] Add placeholder files:
-  - [ ] `css/style.css`
-  - [ ] `js/script.js`
-  - [ ] `README.md`
+- [x] Create the project folder.
+- [x] Create `index.html`, `about.html`, and `contact.html`.
+- [x] Create enough additional pages to reach 7-10 total HTML pages.
+- [x] Create the following folders:
+  - [x] `images/`
+  - [x] `css/`
+  - [x] `js/`
+- [x] Add placeholder files:
+  - [x] `css/style.css`
+  - [x] `js/script.js`
+  - [x] `README.md`
 
 ### 2. Build the HTML Page Structure
 
