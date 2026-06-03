@@ -14,10 +14,7 @@ Mordecai Dada
 
 ## Target Users
 
-[Briefly describe who the website is for.]
-
-Example:
-This website is intended for users who want to [main user goal]. It provides information about [topic/service] and helps users [main action or benefit].
+This website is intended for users who want to find a relevant recipe. It provides information about all kinds of different recipes and helps users find one for them based on their needs, such as price or ingredients.
 
 ## Pages Included
 
@@ -25,13 +22,13 @@ The project must include 7-10 HTML pages. The following pages are planned:
 
 | Page | File Name | Purpose | Assigned To |
 |---|---|---|---|
-| Home | `index.html` | Introduces the project and links to main sections. | [Name] |
-| About | `about.html` | Explains the purpose, audience, and background of the project. | [Name] |
-| Contact | `contact.html` | Provides contact information and includes an HTML form. | [Name] |
-| resources | `resources.html` | Provides some helpful links for recipes or fun sites for cooking-related research | [Name] |
-| recipeSearch | `recipeSearch.html` | A page to let users search for recipes based on ingredients, price, etc. | [Name] |
-| seaerchResults | `searchResults.html` | A page to show users the search results of all the different recipes | [Name] |
-| recipe| `recipe.html` | A page that takes data from the API and renders it in a nice, easy format| [Name] |
+| Home | `index.html` | Introduces the project and links to main sections. | Osmond |
+| About | `about.html` | Explains the purpose, audience, and background of the project. | Betty |
+| Contact | `contact.html` | Provides contact information and includes an HTML form. | Mordecai|
+| resources | `resources.html` | Provides some helpful links for recipes or fun sites for cooking-related research | Betty |
+| recipeSearch | `recipeSearch.html` | A page to let users search for recipes based on ingredients, price, etc. | Denise |
+| seaerchResults | `searchResults.html` | A page to show users the search results of all the different recipes | Denise |
+| recipe| `recipe.html` | A page that takes data from the API and renders it in a nice, easy format| Osmond |
 | [Optional Page 8] | `[page-name].html` | [Brief purpose.] | [Name] |
 | [Optional Page 9] | `[page-name].html` | [Brief purpose.] | [Name] |
 | [Optional Page 10] | `[page-name].html` | [Brief purpose.] | [Name] |
