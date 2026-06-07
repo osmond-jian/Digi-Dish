@@ -17,7 +17,7 @@
 			<nav>
 				<span>DigiDish</span>
 				<ul>
-					<li><a href="#">Home</a></li>
+					<li><a href="/">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
 					<li><a href="resources.html">Resources</a></li>
@@ -57,7 +57,11 @@
 		<section>
 			<div>
 				<h2>Try it out and Search</h2>
-				<input type="search">
+				<form>
+					<label for="searchBox"></label>
+					<input type="text" id="searchBox" name="searchBox" placeholder="Try any ingredient in your mind!" class="search-box"/>
+					<button class="button">Search</button>
+				</form>
 			</div>
 		</section>
 
