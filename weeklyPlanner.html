@@ -1,115 +1,118 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Weeky Planner">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weekly Planner</title>
 
-    <!-- external CSS link -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <span>DigiDish</span>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="recipeSearch.html">Recipe Search</a></li>
-          <li><a href="weeklyPlanner.html">Weekly Planner</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Weeky Planner">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weekly Planner</title>
 
-    <main>
+  <!-- external CSS link -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <span>DigiDish</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="recipeSearch.html">Recipe Search</a></li>
+        <li><a href="weeklyPlanner.html">Weekly Planner</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div>
       <div>
-        <div>
-          <h2>Search Recipes</h2>
-          <input id="searchInput" placeholder="Search recipe..." />
-          <button onclick="searchRecipes()">Search</button>
-          <div id="results"></div>
-        </div>
-
-        <div>
-          <h2>Weekly Planner</h2>
-          <table border="1" cellpadding="10">
-            <thead>
-              <tr>
-                <th>Day</th>
-                <th>Breakfast</th>
-                <th>Lunch</th>
-                <th>Dinner</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td><strong>Monday</strong></td>
-                <td id="Monday-Breakfast">-</td>
-                <td id="Monday-Lunch">-</td>
-                <td id="Monday-Dinner">-</td>
-              </tr>
-
-              <tr>
-                <td><strong>Tuesday</strong></td>
-                <td id="Tuesday-Breakfast">-</td>
-                <td id="Tuesday-Lunch">-</td>
-                <td id="Tuesday-Dinner">-</td>
-              </tr>
-
-              <tr>
-                <td><strong>Wednesday</strong></td>
-                <td id="Wednesday-Breakfast">-</td>
-                <td id="Wednesday-Lunch">-</td>
-                <td id="Wednesday-Dinner">-</td>
-              </tr>
-
-              <tr>
-                <td><strong>Thursday</strong></td>
-                <td id="Thursday-Breakfast">-</td>
-                <td id="Thursday-Lunch">-</td>
-                <td id="Thursday-Dinner">-</td>
-              </tr>
-
-              <tr>
-                <td><strong>Friday</strong></td>
-                <td id="Friday-Breakfast">-</td>
-                <td id="Friday-Lunch">-</td>
-                <td id="Friday-Dinner">-</td>
-              </tr>
-
-              <tr>
-                <td><strong>Saturday</strong></td>
-                <td id="Saturday-Breakfast">-</td>
-                <td id="Saturday-Lunch">-</td>
-                <td id="Saturday-Dinner">-</td>
-              </tr>
-
-              <tr>
-                <td><strong>Sunday</strong></td>
-                <td id="Sunday-Breakfast">-</td>
-                <td id="Sunday-Lunch">-</td>
-                <td id="Sunday-Dinner">-</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="grocery">
-          <h2>Generated Grocery List</h2>
-          <button>Generate Grocery List</button>
-          <ul id="groceryList"></ul>
-        </div>
+        <h2>Search Recipes</h2>
+        <input id="searchInput" placeholder="Search recipe..." />
+        <button onclick="searchRecipes()">Search</button>
+        <div id="results"></div>
       </div>
-    </main>
 
-    <footer>
-      <span>Group 2</span>
-    </footer>
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
+      <div>
+        <h2>Weekly Planner</h2>
+        <table border="1" cellpadding="10">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Breakfast</th>
+              <th>Lunch</th>
+              <th>Dinner</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><strong>Monday</strong></td>
+              <td id="Monday-Breakfast">-</td>
+              <td id="Monday-Lunch">-</td>
+              <td id="Monday-Dinner">-</td>
+            </tr>
+
+            <tr>
+              <td><strong>Tuesday</strong></td>
+              <td id="Tuesday-Breakfast">-</td>
+              <td id="Tuesday-Lunch">-</td>
+              <td id="Tuesday-Dinner">-</td>
+            </tr>
+
+            <tr>
+              <td><strong>Wednesday</strong></td>
+              <td id="Wednesday-Breakfast">-</td>
+              <td id="Wednesday-Lunch">-</td>
+              <td id="Wednesday-Dinner">-</td>
+            </tr>
+
+            <tr>
+              <td><strong>Thursday</strong></td>
+              <td id="Thursday-Breakfast">-</td>
+              <td id="Thursday-Lunch">-</td>
+              <td id="Thursday-Dinner">-</td>
+            </tr>
+
+            <tr>
+              <td><strong>Friday</strong></td>
+              <td id="Friday-Breakfast">-</td>
+              <td id="Friday-Lunch">-</td>
+              <td id="Friday-Dinner">-</td>
+            </tr>
+
+            <tr>
+              <td><strong>Saturday</strong></td>
+              <td id="Saturday-Breakfast">-</td>
+              <td id="Saturday-Lunch">-</td>
+              <td id="Saturday-Dinner">-</td>
+            </tr>
+
+            <tr>
+              <td><strong>Sunday</strong></td>
+              <td id="Sunday-Breakfast">-</td>
+              <td id="Sunday-Lunch">-</td>
+              <td id="Sunday-Dinner">-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="grocery">
+        <h2>Generated Grocery List</h2>
+        <button>Generate Grocery List</button>
+        <ul id="groceryList"></ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <span>Group 2</span>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
