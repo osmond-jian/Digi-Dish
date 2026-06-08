@@ -30,5 +30,5 @@ Mordecai Dada
 [https://osmond-jian.github.io/Digi-Dish/](https://osmond-jian.github.io/Digi-Dish/)
 
 ## Asset Credits/References
-
+Recipe.svg icon created by photo3idea_studio - Flaticon
 
