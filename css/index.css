@@ -1,0 +1,21 @@
+main {
+    padding: 5%;
+}
+
+.index-description {
+    padding: 5%;
+}
+
+.index-tutorial {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.tutorial-card {
+    background-color: lightblue;
+    border-radius: 0.5rem;
+    margin: 1%;
+    padding: 1%;
+}
