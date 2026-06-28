@@ -45,5 +45,6 @@ Mordecai Dada
 
 ## Asset Credits/References
 Recipe.svg icon created by photo3idea_studio - Flaticon
+
 Other images are personal images or created by one of the team members
 
