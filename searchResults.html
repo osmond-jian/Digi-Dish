@@ -11,7 +11,9 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/searchResults.css">
 	</head>
+	
 	<body>
 		<header>
 			<nav>
@@ -33,31 +35,24 @@
 			</nav>
 		  </header>
 
-		<main>
-			<section>
-				<h1>Search for a recipe</h1>
-				<form>
-					<label for="searchBox">Recipe Search</label>
-					<input type="text" id="searchBox" name="searchBox" placeholder="Try another ingredient" class="search-box">
-					<button class="button" type="submit">Search</button>
+		<main class="results-container">
+    
+			<section class="search-section">
+				<h1 class="search-title">Search for a recipe</h1>
+				<form class="search-form" onsubmit="handleSearchSubmit(event)">
+					<div class="input-wrapper">
+						<label for="searchBox" class="sr-only">Recipe Search</label>
+						<input type="text" id="searchBox" name="searchBox" placeholder="Try another ingredient" class="recipe-input">
+					</div>
+					<button class="search-button" type="submit">Search</button>
 				</form>
 			</section>
 
-			<section>
-				<h2>Here are some ideas for you...</h2>
+			<section class="ideas-section">
+				<h2 class="ideas-heading">Here are some ideas for you...</h2>
 
-				<!-- Hard coded list for visual presentation; will be updated to API data results -->
-				<ul id="results-list"></ul>
-
-				<!-- To be used in the future after adding script for data fetching -->
-				<!-- <template id="recipe-template">
-					<div class="recipe-card">
-						<h3></h3>
-						<p></p>
-					</div>
-				</template> -->
+				<ul id="results-list" class="recipe-grid"></ul>
 			</section>
-
 		</main>
 
 		<footer>
