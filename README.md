@@ -8,7 +8,16 @@ This is an app using HTML, CSS, and JS that will use a recipe API and help users
 
 ## Phase 2 Updates
 
-For phase 2, the team added styling to all pages, including responsive considerations for phones and tablet screens. We included an absolute positioned nav to create a more sleek feeling and to better highlight the colour scheme. We also added more pictures for customization and personality.
+For phase 2, the team added styling to all pages, including responsive considerations for phones and tablet screens. We included a fixed positioned nav to create a more sleek feeling and to better highlight the colour scheme. We also added more pictures for customization and personality.
+
+Key styling and responsive design improvements include:
+
+- **Shared stylesheet** (`css/style.css`) sets consistent typography, colour scheme, and layout across all pages, with page-specific stylesheets for unique content areas
+- **Colour scheme** built around a burnt orange accent (`#c75c2c`) and dark brown nav/footer (`#4f301f`) on a warm cream-to-light-blue gradient background
+- **Fixed header and footer** using `position: fixed` and `z-index` so navigation and branding are always visible while scrolling
+- **Flexbox and CSS Grid** used throughout — flexbox for the nav bar, page sections, and forms; CSS Grid for the team gallery (about page) and recipe results cards
+- **Responsive breakpoints** at 600px (small phones) and 992px (tablets and large phones), collapsing layouts to single columns and switching the nav to a hamburger dropdown menu
+- **Visual effects** including box shadows on cards and nav, border-radius on buttons and images, hover transitions on nav links and buttons, and card elevation on the search results page
 
 ## Team Members
 
@@ -28,6 +37,7 @@ Mordecai Dada
 | recipeSearch | `recipeSearch.html` | A page to let users search for recipes based on ingredients, price, etc. | Denise |
 | seaerchResults | `searchResults.html` | A page to show users the search results of all the different recipes | Denise |
 | recipe| `recipe.html` | A page that takes data from the API and renders it in a nice, easy format| Osmond |
+| Weekly Planner | `weeklyPlanner.html` | Lets users plan their weekly meals and generate a grocery list | Mordecai |
 
 ## GitHub Pages link
 
