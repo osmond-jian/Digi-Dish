@@ -81,11 +81,12 @@
     }
 
     .team-gallery {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
 
     .team-member {
-        width: 100%
+        width: 12rem;
     }
 }
 
@@ -95,6 +96,12 @@
     }
 
     .team-gallery {
-    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    justify-items: center;
+    gap: 2rem;
+    }
+
+    .team-member {
+        width: 12rem;
     }
 }
