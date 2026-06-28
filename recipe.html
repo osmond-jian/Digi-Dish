@@ -6,17 +6,22 @@
   	<meta name="keywords" content="one, two, three">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>Chicken Caesar Salad</title>
+		<title>Recipe Name That will Be changed with fetched data</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/recipe.css">
 	</head>
 	<body>
 		<header>
 			<nav>
-				<span>DigiDish</span>
-				<ul>
+				<!-- hamburger menu for smaller screen sizes -->
+				<div class="hamburger">
+					<button class="hamburger-icon">≡</button>
+				</div>
+				<img id="digidish-logo" src="images/digidish_nav_logo.png" alt="digidish logo">
+				<ul class="nav-list">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
@@ -26,57 +31,57 @@
 				</ul>
 			</nav>
 		</header>
-		<main>
-			<h1>Chicken Caesar Salad [to be filled by API data]</h1>
-			<span>Tags and Categories [to be filled by API data]</span>
-		</main>
-		<section>
-			<h2> Instructions </h2>
-			<ol>
-				<li>Step 1: Defrost chicken and slice it</li>
-				<li>Step 2: Cut the lettuce into quarter chunks</li>
-				<li>Step 3: Add into a bowl, mix it up with ranch sauce</li>
-			</ol>
-		</section>
-		<section>
-			<h2>Ingredients</h2>
-			<ul>
-				<li>
-					<span>Measure 1 g</span>
-					Item 1 Chicken
-				</li>
-				<li>
-					<span>Measure 100g</span>
-					Item 2 Lettuce
-				</li>
-				<li>
-					<span>Measure 100mL</span>
-					Item 3 Ranch
-				</li>
-				<li>
-					<span>Measure 1mg</span>
-					Item 4 Salt
-				</li>
-				<li>
-					<span>Measure 1mg</span>
-					Item 5 Pepper
-				</li>
-			</ul>
-		</section>
-		<section>
-			<h2>Picture:</h2>
-			<img src="images/recipe.svg" alt="Picture of recipe book icon">
-		</section>
-		<section>
-			<h2>Video Instructions:</h2>
-			<!-- <video src="https://www.youtube.com/watch?v=1IszT_guI08">
 
-			</video> -->
+		<main>
+			<div class="main-recipe-name">
+				<h1 id="meal-name"></h1>
+				<p id="meal-alternate"></p>
+				<div class="mainTags">
+					<h3>Categories</h3>
+					<span id="meal-category"></span>
+					<h3>Area</h3>
+					<span id="meal-area"></span>
+					<h3>Tags</h3>
+					<ul id="meal-tags"></ul>
+				</div>
+			</div>
+			<div class="main-picture">
+				<a id="meal-image-link" href="" target="_blank">
+					<img id="meal-image" src="" alt="">
+				</a>
+				<a id="meal-image-source" href="" target="_blank">Photo Credits</a>
+			</div>
+		</main>
+
+		<section class="recipe-lists">
+			<div class="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients-list"></ul>
+			</div>
+
+			<div class="instructions">
+				<h2>Instructions</h2>
+				<p id="meal-time"></p>
+				<ol id="instructions"></ol>
+			</div>
 		</section>
+
+		<section class="supplementary-resources">
+			<div class="youtube">
+				<h2>Video Instructions:</h2>
+				<iframe id="meal-video" width="560" height="315" src="" allowfullscreen></iframe>
+			</div>
+			<div class="recipe-og-source">			
+				<h2>Original Recipe Source:</h2>
+				<a id="meal-source" href="" target="_blank"></a>
+			</div>
+		</section>
+
 		<footer>
 			<span>Group 2</span>
-			<a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by photo3idea_studio - Flaticon</a>
 		</footer>
+
 		<script src="js/script.js"></script>
+		<script src="js/search.js"></script>
 	</body>
 </html>

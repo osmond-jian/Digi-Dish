@@ -26,8 +26,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: black;
-  background-color: beige;
-  margin: 20px;
+  /* background-color: beige; */
+  background:linear-gradient(to bottom, #fde8d5, #e8f4f8);
 }
 
 h1 {
@@ -69,9 +69,14 @@ img {
 /* LAYOUT
 /*******************************************/
 header {
+  margin: 2% 1%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+section {
+  margin: 0 1%;
 }
 
 nav {
@@ -139,11 +144,16 @@ footer {
   }
   .hamburger {
     display: block;
+    
   }
 }
 
 /* for large phones and tablets */
 @media (max-width: 992px) {
+  nav {
+    justify-content: space-between;
+  }
+
   .nav-list {
     display: none;
   }

@@ -1,0 +1,136 @@
+main {
+    margin: 2% 1%;
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.main-recipe-name {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.main-picture {
+    flex: 1;
+}
+
+.main-picture img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+h1 {
+    margin: 1% 0;
+}
+
+.mainTags {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: lightblue;
+    padding: 2%;
+    border-radius: 0.5rem;
+}
+
+.mainTags span {
+    margin: 1rem;
+    background-color: lightcyan;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.75rem;
+
+}
+
+#meal-tags {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+#meal-tags li {
+    list-style: none;
+    margin: 1rem;
+    background-color: lightgreen;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.75rem;
+}
+
+.recipe-lists {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: auto;
+    background-color: lightblue;
+    border-radius: 0.5rem;
+
+}
+
+.ingredients{
+    background-color:lightcyan;
+    padding: 5%;
+    border-radius: 0.5rem;
+    margin: 1%;
+}
+
+.instructions {
+    background-color:lightcyan;
+    flex:1;
+    padding: 5%;
+    border-radius: 0.5rem;
+    margin: 1%;
+}
+
+.supplementary-resources {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: lightblue;
+    padding: 2% 5%;
+    margin: 1%;
+    border-radius: 0.5rem;
+}
+
+.supplementary-resources > div {
+    flex: 1;
+}
+
+/* tablets */
+@media (max-width: 992px) {
+    main {
+        flex-direction: column;
+    }
+
+    .recipe-lists {
+        flex-direction: column;
+    }
+
+    .supplementary-resources {
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 100%;
+        aspect-ratio: 16/9;
+        height: auto;
+    }
+}
+
+/* phones */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #meal-tags {
+        flex-wrap: wrap;
+    }
+
+    #meal-tags li {
+        margin: 0.25rem;
+    }
+}
