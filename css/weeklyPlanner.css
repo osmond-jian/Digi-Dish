@@ -27,7 +27,7 @@ input:focus {
     box-shadow: 0 0 0 4px rgba(199,92,44,.15);
 }
 
-.search-button {
+.recipe-search-button {
     width: 6rem;
     border-radius: 0px 6px 6px 0px;
 }
