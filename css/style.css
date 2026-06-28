@@ -28,6 +28,8 @@ body {
   color: black;
   /* background-color: beige; */
   background:linear-gradient(to bottom, #fde8d5, #e8f4f8);
+  /* background-color: #fff6ee;
+  margin: 20px; */
 }
 
 h1 {
@@ -68,11 +70,21 @@ img {
 /******************************************
 /* LAYOUT
 /*******************************************/
+
 header {
-  margin: 2% 1%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+
+body {
+  padding-top: 110px; /* Prevent content from hiding behind the fixed header */
+  padding-bottom: 70px; /* Adjust to match your footer height */
 }
 
 section {
@@ -80,57 +92,117 @@ section {
 }
 
 nav {
-  width: 100%;
-  padding: 0.5rem;
-  background-color: lightblue;
-  border-radius: 1rem;
-  display:flex;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  background: #4f301f;
+  border: 1px solid #f0d2bf;
+  border-radius: 18px;
+
+  padding: 0.8rem 1.8rem;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
 }
 
 #digidish-logo {
-  border-radius: 30%;
   width: 120px;
-  height: 67px;
+  height: auto;
+  border-radius: 12px;
+  flex-shrink: 0;
 }
 
 nav ul {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 1.2rem;
+
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+
+  list-style: none;
 }
 
 nav ul li {
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  list-style:none;
-
+  margin: 0;
 }
 
 nav ul li a {
-  color: #c75c2c;
+  display: block;
+
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1rem;
+
+  padding: .65rem 1rem;
+  border-radius: 999px;
+
+  transition: all .25s ease;
 }
 
-nav ul li:hover {
-  background-color:lightskyblue;
+nav ul li a:hover {
+  background: #c75c2c;
+  color: white;
+}
+
+/* Current page */
+nav ul li a.active {
+  background: #c75c2c;
+  color: white;
+}
+
+section {
+  scroll-margin-top: 120px;
 }
 
 /* disable hamburger menu on larger screens */
 .hamburger {
-  display:none;
+  display: none;
+  margin-left: auto;
 }
 
 .hamburger-icon {
-  cursor:pointer;
+  font-size: 2rem;
+  background-color: #c75c2c;
+  color: #ffff;
+  cursor: pointer;
+  border: 1px solid #c75c2c;
+  border-radius: .5rem;
+  padding: 10px;
 }
 
-footer {
+/* footer {
   width: 100%;
   display: flex;
   justify-content: center;
+} */
+
+footer {
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  background: #4f301f;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+footer span {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 /******************************************
@@ -205,25 +277,74 @@ footer {
 
 /* For extra small screens like small phones */
 @media (max-width: 600px) {
-  .nav-list {
-    display: none;
+  header {
+    padding: .6rem;
   }
-  .hamburger {
-    display: block;
-    
+
+  nav {
+    padding: .8rem 1rem;
+    border-radius: 15px;
+  }
+
+  #digidish-logo {
+    width: 85px;
+  }
+
+  .hamburger-icon {
+    font-size: 1.8rem;
   }
 }
 
 /* for large phones and tablets */
 @media (max-width: 992px) {
-  nav {
-    justify-content: space-between;
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #c75c2c;
+    cursor: pointer;
   }
 
   .nav-list {
     display: none;
+
+    position: absolute;
+    top: 85px;
+    right: 20px;
+
+    width: 250px;
+
+    flex-direction: column;
+    gap: 0;
+
+    background: #fff7ef;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    overflow: hidden;
   }
-  .hamburger {
+
+  .nav-list.show {
+    display: flex;
+  }
+
+  .nav-list li {
+    width: 100%;
+  }
+
+  .nav-list li a {
     display: block;
+    padding: 15px 20px;
+    border-radius: 0;
+    color: #4f301f;
+  }
+
+  .nav-list li a:hover {
+    background: #c75c2c;
+    color: white;
+  }
+
+  #digidish-logo {
+    width: 100px;
   }
 }

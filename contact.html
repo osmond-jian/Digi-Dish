@@ -11,19 +11,26 @@
     <!-- external CSS link -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
   </head>
   <body>
     <header>
       <nav>
-        <span>DigiDish</span>
-        <ul>
+        <a href="index.html">
+          <img id="digidish-logo" src="images/digidish_nav_logo.png" alt="digidish logo">
+        </a>
+        <ul class="nav-list" id="navList">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
           <li><a href="resources.html">Resources</a></li>
           <li><a href="recipeSearch.html">Recipe Search</a></li>
-		  <li><a href="weeklyPlanner.html">Weekly Planner</a></li>
+          <li><a href="weeklyPlanner.html">Weekly Planner</a></li>
         </ul>
+        <!-- hamburger menu for smaller screen sizes -->
+        <div class="hamburger" id="hamburger">
+          <button class="hamburger-icon">≡</button>
+        </div>
       </nav>
     </header>
 
@@ -36,20 +43,20 @@
         </p>
         <form>
           <div>
-            <label for="firstName" name="firstName">First name</label><br>
-            <input type="text" id="firstName"><br>
+            <label for="firstName" name="firstName">First name</label>
+            <input type="text" id="firstName">
           </div>
           <div>
-            <label for="lastName" name="lastName">Last name</label><br>
-            <input type="text" id="lastName"><br>
+            <label for="lastName" name="lastName">Last name</label>
+            <input type="text" id="lastName">
           </div>
           <div>
-            <label for="email">Email</label><br>
-            <input type="email" id="email" name="email" required><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
           </div>
           <div>
-            <label for="message">Message</label><br>
-            <textarea id="message" name="text" required></textarea><br>
+            <label for="message">Message</label>
+            <textarea id="message" name="text" required></textarea>
           </div>
           <div>
             <button type="submit">Contact</button>

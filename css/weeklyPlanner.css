@@ -1,0 +1,76 @@
+.container {
+    max-width: 1200px;
+    margin: auto; 
+    padding: 20px;
+}
+.search-area, .planner, .grocery {
+    background:#fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1)
+}
+h1, h2 {
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+}
+#searchInput {
+    width: 20rem;
+    padding: 11px;
+    border: 1px solid #958d8d;
+    border-radius: 6px 0px 0px 6px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #c75c2c;
+    box-shadow: 0 0 0 4px rgba(199,92,44,.15);
+}
+
+.search-button {
+    width: 6rem;
+    border-radius: 0px 6px 6px 0px;
+}
+button {
+    background-color: #c75c2c;
+    color: #ffff;
+    border: 1px solid #c75c2c;
+    border-radius: .5rem;
+    padding: 11px;
+    cursor: pointer;
+}
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    vertical-align: top;
+}
+th { 
+    background: #c75c2c;
+    color: #fff
+}
+
+@media (max-width: 600px) {
+    #searchInput {
+        width: 100%;
+        border-radius: 6px
+    }
+    .search-button {
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 6px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+        margin: 0 0 .7rem 0;
+    }
+}
