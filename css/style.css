@@ -231,16 +231,51 @@ footer span {
 
 /* for large phones and tablets */
 @media (max-width: 992px) {
-  nav {
-    padding: 1rem;
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #c75c2c;
+    cursor: pointer;
   }
 
   .nav-list {
     display: none;
+
+    position: absolute;
+    top: 85px;
+    right: 20px;
+
+    width: 250px;
+
+    flex-direction: column;
+    gap: 0;
+
+    background: #fff7ef;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    overflow: hidden;
   }
 
-  .hamburger {
+  .nav-list.show {
+    display: flex;
+  }
+
+  .nav-list li {
+    width: 100%;
+  }
+
+  .nav-list li a {
     display: block;
+    padding: 15px 20px;
+    border-radius: 0;
+    color: #4f301f;
+  }
+
+  .nav-list li a:hover {
+    background: #c75c2c;
+    color: white;
   }
 
   #digidish-logo {
