@@ -1,0 +1,102 @@
+#about-page {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-intro {
+    display:flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    background-color: lightblue;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.about-intro h1 {
+    color: #c75c2c;
+    margin-bottom: 0.5rem;
+}
+
+.about-intro p {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.about-section {
+    padding: 5%;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.about-section h2 {
+    color: #c75c2c;
+}
+
+.team-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    margin-top: 2rem;
+}
+
+.team-member {
+    width: 12rem;
+    margin: 0;
+}
+
+.team-member img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem rgba(199, 92, 44, 0.5);
+}
+
+.team-member figcaption {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+#about-page a {
+    align-self: center;
+    background-color: #c75c2c;
+    color: black;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+#about-page a:hover {
+    background-color: lightgrey;
+    color:#c75c2c;
+}
+
+@media (max-width: 600px) {
+    .about-intro p {
+        font-size: 1rem;
+    }
+
+    .team-gallery {
+        flex-direction: column;
+    }
+
+    .team-member {
+        width: 100%
+    }
+}
+
+@media (max-width: 992px) {
+    .about-intro p {
+        font-size: 1.2rem;
+    }
+
+    .team-gallery {
+    flex-direction: column;
+    }
+}
