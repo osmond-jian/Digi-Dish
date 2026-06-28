@@ -4,7 +4,11 @@ A web app to help people get easy access to relevant recipes!
 
 ## Project Description
 
-This is an app using HTML, CSS, and JS that will use a recipe API and help users find the right recipe for their situation
+This is an app using HTML, CSS, and JS that will use a recipe API and help users find the right recipe for their situation. It includes search functionality and a weekly planner for ingredient shopping.
+
+## Phase 2 Updates
+
+For phase 2, the team added styling to all pages, including responsive considerations for phones and tablet screens. We included an absolute positioned nav to create a more sleek feeling and to better highlight the colour scheme. We also added more pictures for customization and personality.
 
 ## Team Members
 
@@ -31,4 +35,5 @@ Mordecai Dada
 
 ## Asset Credits/References
 Recipe.svg icon created by photo3idea_studio - Flaticon
+Other images are personal images or created by one of the team members
 
