@@ -1,0 +1,98 @@
+section {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+section h1 {
+    color: #c75c2c;
+    font-size: 2.2rem;
+    margin-bottom: .5rem;
+    margin-top: 0;
+}
+
+section p {
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: .5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: .9rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: .3s ease;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #c75c2c;
+    box-shadow: 0 0 0 4px rgba(199,92,44,.15);
+}
+
+textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    align-self: flex-start;
+    background: #c75c2c;
+    color: white;
+    border: none;
+    padding: .9rem 2rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #a94b22;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(199,92,44,.25);
+}
+
+@media (max-width: 768px) {
+
+    section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    section h1 {
+        font-size: 1.8rem;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+
+}
