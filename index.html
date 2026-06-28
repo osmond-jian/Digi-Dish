@@ -11,12 +11,17 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/index.css">
 	</head>
 	<body>
 		<header>
 			<nav>
-				<span>DigiDish</span>
-				<ul>
+				<!-- hamburger menu for smaller screen sizes -->
+				<div class="hamburger">
+					<button class="hamburger-icon">≡</button>
+				</div>
+				<img id="digidish-logo" src="images/digidish_nav_logo.png" alt="digidish logo">
+				<ul class="nav-list">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
@@ -26,35 +31,43 @@
 				</ul>
 			</nav>
 		</header>
+		<!-- Bold intro section to capture user attention -->
 		<main>
-			<h1>Digi Dish</h1>
-			<p>
-				An app to find the perfect recipe for any scenario!
-			</p>
+			<div class="main-introtext">
+				<h1>Digi Dish</h1>
+				<p>
+					An app to find the perfect recipe for any scenario!
+				</p>
+			</div>
+			<div>
+				<img id="randomMealImage" src="" alt="">
+			</div>
 		</main>
 
 		<!-- Short Description of App Purpose -->
-		<section>
+		<section class="index-description">
 			<div>
 				<h2>Hungry?</h2>
 				<p>DigiDish can help! Find delicious recipes instantly using our cutting edge search functions.</p>
 			</div>
-			<div>
-				<h3>Search by Ingredients</h3>
-				<p>You can look for recipes based on specific ingredients in your fridge.</p>
-			</div>
-			<div>
-				<h3>Filter by Category</h3>
-				<p>Feeling Chinese? You can filter by category or area.</p>
-			</div>
-			<div>
-				<h3>View the recipe in detail</h3>
-				<p>Our recipe card is designed by UX Designers and backed with qualitative data</p>
+			<div class="index-tutorial">
+				<div class="tutorial-card">
+					<h3>Search by Ingredients</h3>
+					<p>You can look for recipes based on specific ingredients in your fridge.</p>
+				</div>
+				<div class="tutorial-card">
+					<h3>Filter by Category</h3>
+					<p>Feeling Chinese? You can filter by category or area.</p>
+				</div>
+				<div class="tutorial-card">
+					<h3>View the recipe in detail</h3>
+					<p>Our recipe card is designed by UX Designers and backed with qualitative data</p>
+				</div>
 			</div>
 		</section>
 
 		<!-- Small compact recipe search Area (sample the recipe Search) -->
-		<section>
+		<section class="index-sample">
 			<div>
 				<h2>Try it out and Search</h2>
 				<form>
@@ -65,11 +78,13 @@
 			</div>
 		</section>
 
+		<!-- not sure what to put here yet but footer information and copyright stuff -->
 		<footer>
 			<span>Group 2</span>
 		</footer>
 
-
 		<script src="js/script.js"></script>
+		<script src="js/randomMeal.js"></script>
+		<script src="js/search.js"></script>
 	</body>
 </html>

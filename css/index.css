@@ -1,0 +1,139 @@
+main {
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+main > div {
+    flex: 1;
+}
+
+#randomMealImage {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.main-introtext {
+    display:flex;
+    align-content: center;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.main-introtext h1 {
+    color: #c75c2c;
+}
+
+.main-introtext p {
+    font-size: 2rem;
+}
+
+.index-description {
+    padding: 5%;
+    background-color: lightblue;
+    border-radius: 0.5rem;
+}
+
+.index-tutorial {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.tutorial-card {
+    background-color: aquamarine;
+    border-radius: 0.5rem;
+    margin: 1%;
+    padding: 1%;
+    flex: 1;
+}
+
+.index-sample {
+    padding: 5%;
+    margin: 5% 1%;
+    border-radius: 0.5rem;
+    background-color: #c75c2c;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.search-box {
+    width: 50%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid #ADD8E6;
+    margin-right: 1rem;
+}
+
+.search-box:focus {
+    border-color:#c75c2c;
+}
+
+.button {
+    background-color: white;
+    color: #c75c2c;
+    padding: 0.75rem 1.5rem;
+    border: none; 
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color:lightgrey;
+}
+
+/* For extra small screens like small phones */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-introtext p {
+        font-size: 1rem;
+    }
+
+    .index-tutorial {
+        flex-wrap: wrap;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+
+    #searchBox {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+/* for large phones and tablets */
+@media (max-width: 992px) {
+    main {
+        flex-direction: column;
+    }
+
+    .main-introtext p {
+        font-size: 1.2rem;
+    }
+
+    .index-tutorial {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
