@@ -39,7 +39,7 @@
     
 			<section class="search-section">
 				<h1 class="search-title">Search for a recipe</h1>
-				<form action="searchResults.html" method="GET" class="search-form">
+				<form class="search-form" onsubmit="handleSearchSubmit(event)">
 					<div class="input-wrapper">
 						<label for="searchBox" class="sr-only">Recipe Search</label>
 						<input type="text" id="searchBox" name="searchBox" placeholder="Try another ingredient" class="recipe-input">
@@ -51,52 +51,8 @@
 			<section class="ideas-section">
 				<h2 class="ideas-heading">Here are some ideas for you...</h2>
 
-				<div class="recipe-grid">
-					
-					<article class="recipe-card">
-						<div class="card-content">
-							<h3 class="recipe-name">
-								<a href="recipe.html" class="recipe-link">Chicken Chow Mein</a>
-							</h3>
-							<p class="recipe-description">A classic dish featuring stir-fried noodles, tender chicken, and crisp vegetables in a savory sauce.</p>
-						</div>
-					</article>
-
-					<article class="recipe-card">
-						<div class="card-content">
-							<h3 class="recipe-name">
-								<a href="recipe.html" class="recipe-link">Chicken Risotto</a>
-							</h3>
-							<p class="recipe-description">A creamy, comforting Italian classic slowly cooked with arborio rice, parmesan, and rich broth.</p>
-						</div>
-					</article>
-
-					<article class="recipe-card">
-						<div class="card-content">
-							<h3 class="recipe-name">
-								<a href="recipe.html" class="recipe-link">Chicken Masala</a>
-							</h3>
-							<p class="recipe-description">A vibrant, deeply aromatic dish simmered with bold spices, tomatoes, and a splash of cream.</p>
-						</div>
-					</article>
-
-				</div>
-
-				<!-- To be used in the future after adding script for data fetching -->
-				<!-- 
-					<template id="recipe-template">
-						<article class="recipe-card">
-							<div class="card-content">
-								<h3 class="recipe-name">
-									<a href="recipe.html" class="recipe-link"></a>
-								</h3>
-								<p class="recipe-description"></p>
-							</div>
-						</article>
-					</template>
-				-->
+				<ul id="results-list" class="recipe-grid"></ul>
 			</section>
-
 		</main>
 
 		<footer>
